@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <link rel="stylesheet" href="place_style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_parent">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="place.html" target="_blank">Place</a></li>
+                <li><a href="blog.html" target="_blank">Blog</a></li>
+                <li><a href="join_us.html" target="_blank">Join Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+            <div class="text_block">
+            <button class="arrow left">&#10094;</button> 
+            
+            <div class="slider-text">
+                <div class="slide active">
+                    <h2>History of fashion</h2>
+                    <p>Even though the terms fashion, clothing and costume are often used together, fashion differs from both. Clothing describes the material and the technical garment, devoid of any social meaning or connections; costume has come to mean fancy dress or masquerade wear. Fashion, by contrast, describes the social and temporal sy "activates" dress as a social signifier in a certain time and context. Philosopher Giorgio Agamben connects fashion to the qualitative Ancient Greek concept of kairos,chronological or sequential time.</p>
+                </div>
+                <div class="slide"> 
+                    <h2>Alleged Western distinctiveness</h2>
+                    <p>While some exclusive brands may claim the label haute couture, in France, the term is technically limited to members of the Chambre Syndicale de la Haute Couture[8] in Paris.[5] Haute couture is more aspirational; inspired by art and culture, and in most cases, reserved for the economic elite. However, New York's fashion calendar hosts Couture Fashion Week, which strives for a more equitable and inclusive mission.</p>
+                </div>
+                <div class="slide"> 
+                    <h2>Lorem ipsum dolor elit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatem optio nulla ipsam a iure saepe molestiae omnis repellat incidunt. Veniam magnam dolores neque quam a numquam consectetur, et nisi distinctio ea tempore at incidunt doloremque recusandae asperiores maiores itaque pariatur quia similique esse beatae. Esse, commodi. Quod fugit a, nam placeat cum neque ut nobis ad rerum veritatis alias soluta doloribus laudantium eius ex maiores beatae quos dicta hic et. Ipsam, in ut totam eius at magni.</p>
+                </div>
+            <button class="arrow right">&#10095;</button> 
+
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3> WWW.N&N-SHOP.COM </h3>
+    </footer>
+
+    <script>
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      dots[i].classList.toggle('active', i === index);
+    });
+  }
+
+  document.querySelector('.arrow.left').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  });
+
+  document.querySelector('.arrow.right').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      currentIndex = i;
+      showSlide(currentIndex);
+    });
+  });
+</script>
+
+</body>
+</html>

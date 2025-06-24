@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>N&N Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_parent">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="place.html" target="_blank">Place</a></li>
+                <li><a href="blog.html" target="_blank">Blog</a></li>
+                <li><a href="join_us.html" target="_blank">Join Us</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="top-header">
+            <h2>N & N House</h2>
+            <button><a href="blog.html" target="_blank">Blog</a></button>
+        </div>
+
+        <div class="line"></div>
+    </header>
+
+    <main>
+        <div class="image-logo">
+            <img src="images/2025-04-16 16.15.09.jpg" alt="N&N">
+            <h2>N & N House</h2>
+        </div>
+
+        <div class="line-short"></div>
+
+        <section>
+            <h2>A LITTLE MAX</h2>
+            <h3>what is N&N</h3>
+            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. t. Praesentium magni modi consectetur excepturi nihil a delectus impedit quas nemo harum.t. Praesentium magni modi consectetur excepturi nihil a delectus impedit quas nemo harum.Praesentium magni modi consectetur excepturi nihil a delectus impedit quas nemo harum.</p>
+           <span id="moreText" style="display:none;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nisi nesciunt debitis cumque maxime iusto consequatur quam nulla accusantium quo.</span>
+            <button class="more" id="moreBtn">MORE</button>
+        </section>
+     <div class="block">
+        <h2>N & N '</h2>
+        <p>of the sun . v.log'in / hd. 4  travia: love, into</p>
+        <div class="discription">
+      
+            <div id="container-1" class="shadow">
+                <h2 style="color: white;">01</h2>
+                <p style="color: white;">In the darkness I abserve you with profound tranqulity</p>
+            </div>
+            <div id="container-2" class="shadow">
+                <h2>02</h2>
+                <p>In the darkness I abserve you with profound tranqulity</p>
+            </div>
+            <div id="container-3" class="shadow">
+                <h2>03</h2>
+                <p>In the darkness I abserve you with profound tranqulity</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="infernale-wrapper">
+        <img src="images/2025-04-16 16.15.21.jpg" alt="Angels">
+        <div class="infer">
+          <h2>infernale</h2>
+          <p>tra la nebbia e la pioggia infernale</p>
+          <span id="addText" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum placeat sed inventore nesciunt numquam quos maiores quia quae ex enim id asperiores eius dolore alias amet, laboriosam, totam deserunt omnis! Veritatis commodi modi delectus. Est consequuntur voluptate.</span>
+          <button class="more" id="addTextBtn">More...</button>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+        <h3> WWW.N&N-SHOP.COM </h3>
+    </footer>
+    <script>
+            const moreBtn = document.getElementById("moreBtn");
+            const moreText = document.getElementById("moreText");
+
+            moreBtn.addEventListener("click", () => {
+            if (moreText.style.display === "none") {
+                moreText.style.display = "inline";
+                moreBtn.textContent = "Less";
+            } else {
+                moreText.style.display = "none";
+                moreBtn.textContent = "More";
+            }
+            });
+
+            const addTextBtn = document.getElementById("addTextBtn");
+            const addText = document.getElementById("addText");
+
+            addTextBtn.addEventListener("click", () => {
+                if(addText.style.display === "none"){
+                    addText.style.display="inline";
+                    addTextBtn.textContent = "Less";
+                }
+                else{
+                    addText.style.display="none";
+                    addTextBtn.textContent = "More";
+                }
+                
+            })
+
+           const shadows = document.getElementsByClassName("shadow");
+
+            for (let i = 0; i < shadows.length; i++) {
+            shadows[i].addEventListener("mouseover", () => {
+                shadows[i].style.boxShadow = "0 4px 15px rgba(0, 0, 0, 0.3)";
+            });
+
+            shadows[i].addEventListener("mouseout", () => {
+                shadows[i].style.boxShadow = "none";
+            });
+            }
+    </script>
+</body>
+</html>

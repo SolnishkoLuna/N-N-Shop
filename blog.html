@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog_style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_parent">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="place.html" target="_blank">Place</a></li>
+                <li><a href="blog.html" target="_blank">Blog</a></li>
+                <li><a href="join_us.html" target="_blank">Join Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+        <div class="slider">
+            <button class="arrow left">&#10094;</button>
+
+            <div class="slides">
+                <img src="images/slider1.jpg" class="slide active" alt="Image 1" />
+                <img src="images/slider2.jpg" class="slide" alt="Image 2" />
+                <img src="images/slider3.jpg" class="slide" alt="Image 3" />
+            </div>
+
+            <button class="arrow right">&#10095;</button>
+
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <div class="text-content">
+            <h2>Explore the World</h2>
+            <p>
+                The fashion industry is a product of the modern age. Prior to the mid-19th century, virtually all clothing was handmade for individuals, either as home production or on order from dressmakers and tailors. By the beginning of the 20th century—with the rise of new technologies such as the sewing machine, the rise of global capitalism and the development of the factory system of production, and the proliferation of retail outlets such as department stores—clothing had increasingly.
+                <br>For example, an American fashion company might source fabric in China and have the clothes manufactured in Vietnam, finished in Italy, and shipped to a warehouse in the United States for distribution to retail outlets internationally. The fashion industry has long been one of the largest employers in the 21st century.
+            </p>
+        </div>
+      </div>
+    </main>
+    <section>
+        <p>Most fashions are made from textiles. The partial automation of the spinning and weaving of wool, cotton, and other natural fibres was one of the first accomplishments of the Industrial Revolution in the 18th century. In the 21st century those processes are highly automated and carried out by computer-controlled high-speed machinery. A large sector of the textile industry produces fabrics for use in apparel. Both natural fibres (such as wool, cotton, silk, and linen) and synthetic fibres (such as nylon, acrylic, and polyester) are used. A growing interest in sustainable fashion (or “eco-fashion”) led to greater use of environmentally friendly fibres, such as hemp. High-tech synthetic fabrics confer such properties as moisture wicking (e.g., Coolmax), stain resistance (e.g., 303 High Tech Fabric Guard), retention or dissipation of body heat, and protection against fire, weapons (e.g., Kevlar), cold (e.g., Thinsulate), ultraviolet radiation (Solarweave), and other hazards. Fabrics are produced with a wide range of effects through dyeing, weaving, printing, and other manufacturing and finishing processes. Together with fashion forecasters, textile manufacturers work well in advance of the apparel production cycle to create fabrics with colours, textures, and other qualities that anticipate consumer demand.</p>
+    </section>
+
+    <footer>
+        <h3> WWW.N&N-SHOP.COM </h3>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const prev = document.querySelector('.arrow.left');
+        const next = document.querySelector('.arrow.right');
+        let current = 0;
+
+        function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+            dots[i].classList.toggle('active', i === index);
+        });
+        }
+
+        prev.addEventListener('click', () => {
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide(current);
+        });
+
+        next.addEventListener('click', () => {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+        });
+
+        dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            current = i;
+            showSlide(current);
+        });
+        });
+
+</script>
+
+</body>
+</html>

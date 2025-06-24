@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav ul{
+    display:flex;
+    align-items: flex-start;
+    flex-direction:row;
+    background-color: #c6c5c1;
+    height: 45px;
+    border-bottom: #333 0.5px solid ;
+}
+
+header nav ul li{
+    margin-left: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color:#333;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #333;
+    
+}
+
+header nav ul li a:hover{
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #edeaea;
+}
+
+main {
+  flex: 1; 
+}
+
+body{
+    background-image: url('images/low-angle-shot-cathedral-ceiling-with-windows-black-white_181624-2526.avif');
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;   
+    background-attachment: fixed;    
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.register-form {
+  background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый */
+  padding: 40px;
+  border-radius: 10px;
+  width: 300px;
+  backdrop-filter: blur(10px); /* Эффект стекла */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.register-form input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white; /* или black — как тебе нравится */
+  color: #fff;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.register-form input::placeholder {
+  color: #ddd;
+}
+
+.register-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-form button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+  footer{
+    display:flex;
+    justify-content: center;
+    margin-top:0px;
+    margin:0;
+  }
+
+
+  footer h3{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing:2px;
+    font-size: 15px;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    color:#ffffff;
+    background-color: #333;
+    margin-top: 30px;
+    height: 60px;
+    font-weight: 100;
+  }
+
+/*------------Media Query---------------------------------- */
+
+@media(max-width:768px) {
+  header nav{
+    width: 100%;
+  }
+  header nav ul li{
+    margin-left: 30px;
+  }
+
+
+}

@@ -1,0 +1,410 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:box;
+}
+header nav ul{
+    display:flex;
+    align-items: flex-start;
+    flex-direction:row;
+    background-color: #c6c5c1c1;
+    height: 45px;
+    border-bottom: #333 0.5px solid ;
+}
+
+header nav ul li{
+    margin-left: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color:#333;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #333;
+    
+}
+
+header nav ul li a:hover{
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #edeaea;
+}
+
+.top-header{
+    display:flex;
+    align-items: flex-start;
+    flex-direction:row;
+    width: 100%;
+    justify-content: space-between;
+}
+.top-header h2{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#333;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;  
+}
+
+.top-header button{
+    background-color: rgba(0, 0, 0, 0.852);
+    color:white;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    height: 32px;
+    width:150px;
+    margin-right: 50px;
+    margin-top: 25px;
+    cursor:pointer;
+}
+
+.top-header button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-header button:hover{
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.line{
+    height: 2px;
+    background-color: black;
+    width:100%;
+}
+
+.image-logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  
+}
+
+.image-logo img{
+    width: 80%;
+    max-width: 90%;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom:20px;
+
+}
+
+.image-logo h2{
+    position: absolute;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    text-align: center;
+    padding: 10px 20px;
+  /*   background-color: rgba(0, 0, 0, 0.5);  затемнение */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.line-short{
+    height: 2px;
+    background-color: black;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+}
+
+section h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:#333;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;  
+}
+
+section h3{
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+section p{
+    width: 40%;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing:1px;
+    font-weight: 300;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.more{
+    background-color: rgba(255, 255, 255, 0.852);
+    color:rgb(0, 0, 0);
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase; 
+    font-size: 16px;
+    border: 1px #000 solid;
+    height: 32px;
+    width:100px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+#moreText{
+    width: 40%;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing:1px;
+    font-weight: 300;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#moreBtn:hover{
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.block{
+    padding-top: 20px;
+}
+
+.block h2{
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    text-align: left;
+    margin-left: 10% ;
+    margin-bottom: 15px;
+}
+
+.block p{
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10% ;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.discription {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto; /* чтобы центрировать по горизонтали */
+    gap: 20px; /* отступы между блоками */
+    padding-top: 20px;
+}
+
+#container-1, #container-2, #container-3 {
+    border: 2px #333 solid;
+    width: calc((80% - 40px) / 3); /* 40px — это два промежутка по 20px */
+    height: 250px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+#container-1{
+    background-color: #333;
+    color: #ffffff;
+}
+
+#container-2{
+    background-color: #ffffff;
+    color: #333;
+
+}
+
+#container-3{
+    background-color: #ffffff;
+    color:#333;
+}
+
+.infernale-wrapper {
+    position: relative;
+    width: 500px; /* фиксированная ширина блока-картинки */
+    height: 460px; /* фиксированная высота, как ты указала */
+    margin: 0 auto; /* чтобы по центру */
+
+  }
+  
+  .infernale-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: translateX(250px);
+  }
+  
+  .infer {
+    position: absolute;
+    top: 20px;
+    left: -200px; /* выносит блок влево поверх изображения */
+    width: 470px;
+    height: 300px;
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transform: translateY(20px);
+  }
+  
+  .infer h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+  
+  .infer p {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
+  .infer button {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    height: 32px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .infer button:hover{
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
+
+  }
+  #addText{
+    font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+     
+  }
+  footer{
+    display:flex;
+    justify-content: center;
+    margin-top:0px;
+    margin:0;
+  }
+
+  footer h3{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing:2px;
+    font-size: 15px;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    color:#ffffff;
+    background-color: #333;
+    margin-top: 30px;
+    height: 60px;
+    font-weight: 100;
+  }
+
+
+
+/*------------Media Query---------------------------------- */
+
+@media(max-width:768px) {
+  header nav{
+    width: 100%;
+  }
+  header nav ul li{
+    margin-left: 30px;
+  }
+
+  .infernale-wrapper {
+    position: relative;
+    width: 500px; /* фиксированная ширина блока-картинки */
+    height: 460px; /* фиксированная высота, как ты указала */
+    margin: 0 auto; /* чтобы по центру */
+
+  }
+  
+  .infernale-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: translateX(0px);
+    margin-right: 10px;
+  }
+  
+  .infer {
+    position: absolute;
+    top: 20px;
+    left: -200px; /* выносит блок влево поверх изображения */
+    width: 470px;
+    height: 300px;
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transform: translateY(20px);
+  }
+  
+  footer{
+    width: 100%;
+  }
+
+  .item_top_1, .item_top_2, .item_top_3{
+    margin-top: 10px;
+    border:1px double #ffffff;
+    height: 75%;
+    width: auto;
+    padding: 15px;
+    background-color: #3c3c3c;
+    color:white;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    order :end; }
+}
+@media (max-width: 600px) {
+  header nav{
+    width: 100%;
+  }
+  .infer {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+    box-shadow: none;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .infer h2,
+  .infer p,
+  #addText {
+    text-align: center;
+  }
+}
